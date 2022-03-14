@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>	
+		*{margin: 0;padding: 0;}
+		.bigbox{width: 1000px;height: 800px;background: url(images/2.jpg) no-repeat;margin: 0 auto;position: relative;}
+		.bracket img{width: 200px;height: 400px;position: absolute;bottom: 10px;left: 400px;}
+		.fsw{width: 700px;height: 700px;background: url(images/fsw.png) no-repeat center center;background-size: cover;position: absolute;left: 150px;top: 50px;animation: xuanzhuan 10s linear infinite;}
+		.fsw .img1{width: 100px;height: 100px;position: absolute;right: 70px;top: 90px;border-radius: 50%;
+					animation: nishi 10s linear infinite;}
+		.fsw .img2{width: 100px;height: 100px;position: absolute;left: 70px;bottom: 90px;border-radius: 50%;
+					animation: nishi 10s linear infinite;}
+		.fsw .img3{width: 100px;height: 100px;position: absolute;left: 70px;top: 70px;border-radius: 50%;
+					animation: nishi 10s linear infinite;}
+		.fsw .img4{width: 100px;height: 100px;position: absolute;right: 70px;bottom: 80px;border-radius: 50%;
+		animation: nishi 10s linear infinite;}
+		.title img{width: 500px;height: 200px;position: absolute;left: 250px;top: 310px;}
+		/*.girl img{width: 100px;height: 100px;position: absolute;right: 220px;top:120px;}*/
+		@keyframes xuanzhuan{
+			0%{transform: translate(0,0) rotate(0deg);}
+			100%{transform: translate(0,0) rotate(360deg);}
+		}
+		@keyframes nishi{
+			0%{transform: translate(0,0) rotate(0deg);}
+			100%{transform: translate(0,0) rotate(-360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<div class="bracket">
+			<img src="images/bracket.png">
+		</div>
+		<div class="fsw">
+			<img src="images/xiaxia1.jpg" class="img1">
+			<img src="images/xiaxia2.jpg" class="img2">
+			<img src="images/xiaxia3.jpg" class="img3">
+			<img src="images/xiaxia4.jpg" class="img4">
+		</div>
+		<div class="title">
+			<img src="images/big-title.png">
+		</div>
+		<audio src="images/xing.mp3" autoplay></audio>
+	</div>
+</body>
+</html>
